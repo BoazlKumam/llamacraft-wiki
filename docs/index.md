@@ -6,7 +6,7 @@ Welcome to the definitive, forensic player guide for **LlamaCraft**! Everything 
 
 ## 🧭 Player Wiki Table of Contents
 
-### 1. [🎣 Fishing, Spawners & Mob Drops](file:///c:/Users/boazl/OneDrive/AI/Ultimate%20Stack/wiki/player/gathering-and-spawners.md)
+### 1. [🎣 Fishing, Spawners & Mob Drops](gathering-and-spawners.md)
 * **Topics Covered**:
   * `/warp siyonocean` environmental deep cold ocean fishing grounds.
   * Fish rarity tiers (Common, Rare, Epic, Legendary) & size valuation formulas.
@@ -18,9 +18,9 @@ Welcome to the definitive, forensic player guide for **LlamaCraft**! Everything 
 
 ---
 
-### 2. [💰 Economy, Jobs & Player Trade](file:///c:/Users/boazl/OneDrive/AI/Ultimate%20Stack/wiki/player/economy-and-trade.md)
+### 2. [💰 Economy, Jobs & Player Trade](economy-and-trade.md)
 * **Topics Covered**:
-  * Starting balance (\$1,000.00).
+  * Starting balance ($1,000.00).
   * The Jobs System: joining up to 3 professions simultaneously, 5% exponential compounding progression per level (up to Level 200).
   * Best-in-class synergies: Fisherman + SiyonOcean, Farmer + Harvester, Hunter + Bosses.
   * Job Points & Rewards Shop (`/jobs shop`): Super Pickaxe, Lure III, Angel Wings (Elytra).
@@ -31,19 +31,19 @@ Welcome to the definitive, forensic player guide for **LlamaCraft**! Everything 
 
 ---
 
-### 3. [📜 Quests, Bounties & The Dragon Egg Relic](file:///c:/Users/boazl/OneDrive/AI/Ultimate%20Stack/wiki/player/quests-and-events.md)
+### 3. [📜 Quests, Bounties & The Dragon Egg Relic](quests-and-events.md)
 * **Topics Covered**:
   * 1,000 custom quests across 10 categories (`/quests`).
-  * Scaling rewards: from \$500 beginner milestones to trillion-dollar godlike achievements.
+  * Scaling rewards: from $500 beginner milestones to trillion-dollar godlike achievements.
   * Secret "Absurd" physics objectives: item sacrifices in cacti, lava, fire, void; anvil crush; End void gliding.
   * Player Bounties (`/bounties`): setting hits with 0% placement tax.
   * The Dragon Egg Relic (`/dragonegg`): anti-enderchest, anti-hopper rules, void rescue, and real-time player compass tracking.
 
 ---
 
-### 4. [👑 Ranks, Progression & Player Perks](file:///c:/Users/boazl/OneDrive/AI/Ultimate%20Stack/wiki/player/ranks-and-progression.md)
+### 4. [👑 Ranks, Progression & Player Perks](ranks-and-progression.md)
 * **Topics Covered**:
-  * Official Rankup Ladder: Stone $\rightarrow$ Copper (\$10k) $\rightarrow$ Iron (\$35k) $\rightarrow$ Gold (\$100k) $\rightarrow$ Diamond (\$300k) $\rightarrow$ Netherite (\$1.0M).
+  * Official Rankup Ladder: Stone $\rightarrow$ Copper ($10k) $\rightarrow$ Iron ($35k) $\rightarrow$ Gold ($100k) $\rightarrow$ Diamond ($300k) $\rightarrow$ Netherite ($1.0M).
   * Cumulative claim block bonuses (+17,500 total bonus blocks).
   * Critical milestones: Iron unlocks Silk Touch spawner mining (`smartspawner.break`); Netherite unlocks Creative Flight (`/fly`).
   * Weekly Rank Kits (`/kit`): 7-day cooldowns from copper gear to pre-enchanted Mending netherite armor.
@@ -51,7 +51,7 @@ Welcome to the definitive, forensic player guide for **LlamaCraft**! Everything 
 
 ---
 
-### 5. [🛡️ Worlds, Land Claims & PvP Combat](file:///c:/Users/boazl/OneDrive/AI/Ultimate%20Stack/wiki/player/worlds-claims-and-pvp.md)
+### 5. [🛡️ Worlds, Land Claims & PvP Combat](worlds-claims-and-pvp.md)
 * **Topics Covered**:
   * The 7 active server dimensions: Overworld, SiyonOcean, The Nether, The End, PvP Arena, Medieval Lobby, Flatworld.
   * Random Wilderness Teleport (`/rtp`): 500 to 9,800 block radius with 10-minute cooldown.

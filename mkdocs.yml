@@ -1,0 +1,61 @@
+site_name: LlamaCraft Wiki
+site_description: The definitive community encyclopedia and gameplay guide for LlamaCraft SMP.
+site_author: LlamaCraft Community
+site_url: https://boazlkumam.github.io/llamacraft-wiki/
+repo_name: BoazlKumam/llamacraft-wiki
+repo_url: https://github.com/BoazlKumam/llamacraft-wiki
+edit_uri: blob/main/docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/controller
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.view
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - "Overview": index.md
+  - "🎣 Fishing & Spawners": gathering-and-spawners.md
+  - "💰 Economy & Trade": economy-and-trade.md
+  - "📜 Quests & Relics": quests-and-events.md
+  - "👑 Ranks & Progression": ranks-and-progression.md
+  - "🛡️ Worlds, Claims & PvP": worlds-claims-and-pvp.md
