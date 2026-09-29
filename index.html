@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LlamaCraft Official Wiki</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦙</text></svg>">
+  <!-- Marked for markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Autumn Canopy Texture Banner -->
+  <div class="top-canopy-banner">
+    <div class="top-nav-bar">
+      <div class="wiki-tabs-left">
+        <button class="nav-tab active" data-target="home">Main Page</button>
+        <button class="nav-tab" data-target="gathering">🎣 Fishing & Spawners</button>
+        <button class="nav-tab" data-target="economy">💰 Economy & Trade</button>
+        <button class="nav-tab" data-target="quests">📜 Quests & Relics</button>
+        <button class="nav-tab" data-target="ranks">👑 Ranks & Perks</button>
+        <button class="nav-tab" data-target="claims">🛡️ Claims & Combat</button>
+      </div>
+      <div class="wiki-tabs-right">
+        <div class="search-box">
+          <input type="text" id="wiki-search" placeholder="Search LlamaCraft Wiki..." autocomplete="off">
+          <span class="search-icon">🔍</span>
+          <div id="search-dropdown" class="search-dropdown hidden"></div>
+        </div>
+        <a href="https://github.com/BoazlKumam/llamacraft-wiki" target="_blank" class="github-link" title="View Source on GitHub">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-container">
+    
+    <!-- Left MediaWiki Sidebar -->
+    <aside class="wiki-sidebar">
+      <div class="sidebar-logo" onclick="switchPage('home')">
+        <div class="logo-box">
+          <span class="logo-icon">🦙</span>
+          <div class="logo-text">
+            <span class="logo-title">LLAMACRAFT</span>
+            <span class="logo-sub">OFFICIAL WIKI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="server-status-card">
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span class="status-text">Server Online</span>
+        </div>
+        <div class="server-ip-box" onclick="copyServerIP()" title="Click to copy IP!">
+          <span class="ip-text">play.llamacraft.net</span>
+          <span class="copy-badge">Copy</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">Navigation</div>
+        <ul class="sidebar-links">
+          <li><a href="#home" onclick="switchPage('home')">🏠 Main Page</a></li>
+          <li><a href="#gathering" onclick="switchPage('gathering')">🎣 Fishing & Spawners</a></li>
+          <li><a href="#economy" onclick="switchPage('economy')">💰 Economy & Jobs</a></li>
+          <li><a href="#quests" onclick="switchPage('quests')">📜 1,000 Quests</a></li>
+          <li><a href="#ranks" onclick="switchPage('ranks')">👑 Ranks & Kits</a></li>
+          <li><a href="#claims" onclick="switchPage('claims')">🛡️ Land Claims & PvP</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">Active Dimensions</div>
+        <ul class="sidebar-links worlds-list">
+          <li><span class="world-tag">Overworld</span> Normal Survival</li>
+          <li><span class="world-tag ocean">SiyonOcean</span> Deep Cold Ocean</li>
+          <li><span class="world-tag nether">The Nether</span> Fortresses & Ores</li>
+          <li><span class="world-tag end">The End</span> Relic & Void Islands</li>
+          <li><span class="world-tag pvp">PvP Arena</span> Wager Colosseum</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">AI & Raw Access</div>
+        <ul class="sidebar-links">
+          <li><a href="https://raw.githubusercontent.com/BoazlKumam/llamacraft-wiki/main/docs/gathering-and-spawners.md" target="_blank">🤖 Raw Fishing MD</a></li>
+          <li><a href="https://raw.githubusercontent.com/BoazlKumam/llamacraft-wiki/main/docs/economy-and-trade.md" target="_blank">🤖 Raw Economy MD</a></li>
+          <li><a href="https://raw.githubusercontent.com/BoazlKumam/llamacraft-wiki/main/docs/quests-and-events.md" target="_blank">🤖 Raw Quests MD</a></li>
+          <li><a href="https://raw.githubusercontent.com/BoazlKumam/llamacraft-wiki/main/docs/ranks-and-progression.md" target="_blank">🤖 Raw Ranks MD</a></li>
+          <li><a href="https://raw.githubusercontent.com/BoazlKumam/llamacraft-wiki/main/docs/worlds-claims-and-pvp.md" target="_blank">🤖 Raw Claims MD</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="wiki-main">
+      
+      <!-- VIEW: PORTAL HOME (MINECRAFT.WIKI HOMEPAGE STYLE) -->
+      <section id="portal-home" class="wiki-view">
+        
+        <!-- Announcement Banner -->
+        <div class="announcement-banner">
+          <div class="announcement-badge">UPDATE</div>
+          <div class="announcement-body">
+            <strong>1,000 Quests & Deep Sea Spawner Barter Live!</strong>
+            Explore the newly mapped 10-tier quest framework, ocean fishing economy, and 10,000-stack Smart Spawners.
+          </div>
+          <button class="banner-action-btn" onclick="switchPage('quests')">Explore Quests →</button>
+        </div>
+
+        <!-- Featured Highlights Grid -->
+        <div class="featured-split-grid">
+          
+          <!-- Left Column: Featured Mechanics & Tile Matrix -->
+          <div class="featured-left">
+            
+            <div class="featured-cards-row">
+              <div class="feature-card ocean-card" onclick="switchPage('gathering')">
+                <div class="feature-card-header">
+                  <span class="card-badge">HOTSPOT</span>
+                  <h4>SiyonOcean Fishing</h4>
+                </div>
+                <p>Catch custom marine fauna in a dedicated Deep Cold Ocean dimension. Trade catches for authentic Smart Spawners!</p>
+              </div>
+
+              <div class="feature-card combat-card" onclick="switchPage('claims')">
+                <div class="feature-card-header">
+                  <span class="card-badge combat">COMBAT</span>
+                  <h4>Hybrid Keep-Inventory</h4>
+                </div>
+                <p>100% item & XP retention on environmental and mob deaths. High-stakes full-loot drops on PvP encounters!</p>
+              </div>
+            </div>
+
+            <!-- THE ICONIC MINECRAFT WIKI CATEGORY MATRIX -->
+            <div class="matrix-container">
+              <div class="matrix-header">
+                <h3>Server Systems & Knowledge Matrix</h3>
+                <span class="matrix-subtitle">Click any category tile to open its complete forensic guide:</span>
+              </div>
+
+              <div class="wiki-tile-grid">
+                
+                <div class="wiki-tile" onclick="switchPage('gathering')">
+                  <div class="tile-icon">🎣</div>
+                  <div class="tile-label">Fishing</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('gathering')">
+                  <div class="tile-icon">⚙️</div>
+                  <div class="tile-label">Spawners</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('economy')">
+                  <div class="tile-icon">💼</div>
+                  <div class="tile-label">Jobs (12)</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('economy')">
+                  <div class="tile-icon">💰</div>
+                  <div class="tile-label">Economy</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('economy')">
+                  <div class="tile-icon">🛒</div>
+                  <div class="tile-label">Markets</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('quests')">
+                  <div class="tile-icon">📜</div>
+                  <div class="tile-label">1,000 Quests</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('quests')">
+                  <div class="tile-icon">🐉</div>
+                  <div class="tile-label">Dragon Relic</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('quests')">
+                  <div class="tile-icon">🎯</div>
+                  <div class="tile-label">Bounties</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('ranks')">
+                  <div class="tile-icon">👑</div>
+                  <div class="tile-label">Rankup Ladder</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('ranks')">
+                  <div class="tile-icon">📦</div>
+                  <div class="tile-label">Weekly Kits</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('ranks')">
+                  <div class="tile-icon">🪽</div>
+                  <div class="tile-label">Fly Mode</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('claims')">
+                  <div class="tile-icon">🛡️</div>
+                  <div class="tile-label">Land Claims</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('claims')">
+                  <div class="tile-icon">⚔️</div>
+                  <div class="tile-label">Combat Tag</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('claims')">
+                  <div class="tile-icon">🧭</div>
+                  <div class="tile-label">RTP Wild</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('gathering')">
+                  <div class="tile-icon">🌾</div>
+                  <div class="tile-label">Auto-Farming</div>
+                </div>
+
+                <div class="wiki-tile" onclick="switchPage('economy')">
+                  <div class="tile-icon">💵</div>
+                  <div class="tile-label">Banknotes</div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Welcome Box & Server Trivia -->
+          <div class="featured-right">
+            
+            <div class="wiki-infobox">
+              <div class="infobox-title">
+                <span class="infobox-logo">🦙</span>
+                <span>LlamaCraft Wiki</span>
+              </div>
+              <p class="infobox-text">
+                Welcome to the definitive community encyclopedia for <strong>LlamaCraft</strong>, reverse-engineered directly from live configurations and server scripts.
+              </p>
+              <div class="infobox-stats">
+                <div class="stat-row"><strong>Articles:</strong> <span>5 Forensic Guides</span></div>
+                <div class="stat-row"><strong>Quests:</strong> <span>1,000 Active Missions</span></div>
+                <div class="stat-row"><strong>Active Worlds:</strong> <span>7 Discrete Realms</span></div>
+                <div class="stat-row"><strong>Server Version:</strong> <span>Paper 1.21.1+</span></div>
+                <div class="stat-row"><strong>Crossplay:</strong> <span>Java & Bedrock</span></div>
+              </div>
+              <div class="infobox-actions">
+                <button class="discord-btn" onclick="window.open('https://discord.gg/llamacraft', '_blank')">💬 Join Discord</button>
+              </div>
+            </div>
+
+            <!-- "Did You Know..." Widget -->
+            <div class="did-you-know-box">
+              <div class="dyk-header">Did you know...</div>
+              <ul class="dyk-list">
+                <li>...that direct <code>/pay</code> transfers incur a <strong>20% delayed tax</strong> after 2 seconds, but physical banknotes from <code>/withdraw</code> are <strong>100% tax-free</strong>?</li>
+                <li>...that <code>/warp siyonocean</code> is locked to the <code>Deep Cold Ocean</code> biome, satisfying cold-water and deep-sea fauna catches?</li>
+                <li>...that Smart Spawners can stack up to <strong>10,000 spawners</strong> in a single block and store up to 10,000 XP internally?</li>
+                <li>...that the <strong>Dragon Egg</strong> cannot enter Ender Chests or Shulker boxes, and a craftable compass tracks the holder across worlds?</li>
+                <li>...that reaching <strong>Netherite Rank</strong> permanently unlocks creative flight (<code>/fly</code>) on the server?</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- VIEW: ARTICLE READER -->
+      <section id="article-reader" class="wiki-view hidden">
+        <div class="article-toolbar">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">LlamaCraft Wiki</a> &gt; <span id="current-crumb">Article</span>
+          </div>
+          <div class="article-actions">
+            <button class="action-btn" onclick="switchPage('home')">← Back to Main Page</button>
+            <a id="raw-markdown-btn" href="#" target="_blank" class="action-btn raw-btn">🤖 View Raw Markdown (AI Access)</a>
+          </div>
+        </div>
+        
+        <article id="article-content" class="markdown-body">
+          <div class="loading-spinner">Loading article...</div>
+        </article>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer class="wiki-footer">
+    <div class="footer-content">
+      <p>LlamaCraft Official Community Wiki. Powered by GitHub Pages. Hosted on global edge CDN with zero local bloat.</p>
+      <p>Text is licensed under Community Creative Commons. Minecraft is a registered trademark of Mojang AB.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
